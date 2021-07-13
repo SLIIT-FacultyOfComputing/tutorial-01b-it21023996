@@ -19,6 +19,17 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
-  
+  int noofkm;
+  int amount;
+
+  printf("enter no of kilometers : ");
+  scanf("%d",&noofkm);
+  if(noofkm<= 30){
+amount = noofkm*50;
+  }
+  else if(noofkm > 30){
+    amount = 30*50 + (noofkm-30)*40;
+  }
+  printf("Amount = %d",amount);
   return 0;
 }
